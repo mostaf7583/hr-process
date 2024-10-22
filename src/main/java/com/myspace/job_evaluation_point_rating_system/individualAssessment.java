@@ -6,12 +6,154 @@ package com.myspace.job_evaluation_point_rating_system;
 
 public class individualAssessment implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public individualAssessment() {
-    }
+	@org.kie.api.definition.type.Label(value = "jobname")
+	private java.lang.String jobname;
+	@org.kie.api.definition.type.Label(value = "adminstration")
+	private java.lang.String adminstration;
+	@org.kie.api.definition.type.Label(value = "department")
+	private java.lang.String department;
+	@org.kie.api.definition.type.Label(value = "educationpoints")
+	private java.lang.Integer educationpoints;
+	@org.kie.api.definition.type.Label(value = "experiencepoints")
+	private java.lang.Integer experiencepoints;
+	@org.kie.api.definition.type.Label(value = "scopeofwork")
+	private java.lang.Integer scopeofwork;
+	@org.kie.api.definition.type.Label(value = "complexityofwork")
+	private java.lang.Integer complexityofwork;
+	@org.kie.api.definition.type.Label(value = "supervisoryandmanagerialpoints")
+	private java.lang.Integer supervisoryandmanagerialpoints;
+	@org.kie.api.definition.type.Label(value = "authoritypoints")
+	private java.lang.Integer authoritypoints;
+	@org.kie.api.definition.type.Label(value = "decisionpoints")
+	private java.lang.Integer decisionpoints;
+	@org.kie.api.definition.type.Label(value = "totalpoints")
+	private java.lang.Integer totalpoints;
+	@org.kie.api.definition.type.Label(value = "createby")
+	private java.lang.String createby;
 
+	public individualAssessment() {
+	}
 
+	public java.lang.String getJobname() {
+		return this.jobname;
+	}
 
+	public void setJobname(java.lang.String jobname) {
+		this.jobname = jobname;
+	}
+
+	public java.lang.String getAdminstration() {
+		return this.adminstration;
+	}
+
+	public void setAdminstration(java.lang.String adminstration) {
+		this.adminstration = adminstration;
+	}
+
+	public java.lang.String getDepartment() {
+		return this.department;
+	}
+
+	public void setDepartment(java.lang.String department) {
+		this.department = department;
+	}
+
+	public java.lang.Integer getEducationpoints() {
+		return this.educationpoints;
+	}
+
+	public void setEducationpoints(java.lang.Integer educationpoints) {
+		this.educationpoints = educationpoints;
+	}
+
+	public java.lang.Integer getExperiencepoints() {
+		return this.experiencepoints;
+	}
+
+	public void setExperiencepoints(java.lang.Integer experiencepoints) {
+		this.experiencepoints = experiencepoints;
+	}
+
+	public java.lang.Integer getScopeofwork() {
+		return this.scopeofwork;
+	}
+
+	public void setScopeofwork(java.lang.Integer scopeofwork) {
+		this.scopeofwork = scopeofwork;
+	}
+
+	public java.lang.Integer getComplexityofwork() {
+		return this.complexityofwork;
+	}
+
+	public void setComplexityofwork(java.lang.Integer complexityofwork) {
+		this.complexityofwork = complexityofwork;
+	}
+
+	public java.lang.Integer getSupervisoryandmanagerialpoints() {
+		return this.supervisoryandmanagerialpoints;
+	}
+
+	public void setSupervisoryandmanagerialpoints(
+			java.lang.Integer supervisoryandmanagerialpoints) {
+		this.supervisoryandmanagerialpoints = supervisoryandmanagerialpoints;
+	}
+
+	public java.lang.Integer getAuthoritypoints() {
+		return this.authoritypoints;
+	}
+
+	public void setAuthoritypoints(java.lang.Integer authoritypoints) {
+		this.authoritypoints = authoritypoints;
+	}
+
+	public java.lang.Integer getDecisionpoints() {
+		return this.decisionpoints;
+	}
+
+	public void setDecisionpoints(java.lang.Integer decisionpoints) {
+		this.decisionpoints = decisionpoints;
+	}
+
+	public java.lang.Integer getTotalpoints() {
+		return this.totalpoints;
+	}
+
+	public void setTotalpoints(java.lang.Integer totalpoints) {
+		this.totalpoints = totalpoints;
+	}
+
+	public java.lang.String getCreateby() {
+		return this.createby;
+	}
+
+	public void setCreateby(java.lang.String createby) {
+		this.createby = createby;
+	}
+
+	public individualAssessment(java.lang.String jobname,
+			java.lang.String adminstration, java.lang.String department,
+			java.lang.Integer educationpoints,
+			java.lang.Integer experiencepoints, java.lang.Integer scopeofwork,
+			java.lang.Integer complexityofwork,
+			java.lang.Integer supervisoryandmanagerialpoints,
+			java.lang.Integer authoritypoints,
+			java.lang.Integer decisionpoints, java.lang.Integer totalpoints,
+			java.lang.String createby) {
+		this.jobname = jobname;
+		this.adminstration = adminstration;
+		this.department = department;
+		this.educationpoints = educationpoints;
+		this.experiencepoints = experiencepoints;
+		this.scopeofwork = scopeofwork;
+		this.complexityofwork = complexityofwork;
+		this.supervisoryandmanagerialpoints = supervisoryandmanagerialpoints;
+		this.authoritypoints = authoritypoints;
+		this.decisionpoints = decisionpoints;
+		this.totalpoints = totalpoints;
+		this.createby = createby;
+	}
 
 }
