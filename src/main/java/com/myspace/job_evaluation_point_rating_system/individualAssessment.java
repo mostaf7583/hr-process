@@ -8,30 +8,32 @@ public class individualAssessment implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "jobname")
+	@org.kie.api.definition.type.Label("jobname")
 	private java.lang.String jobname;
-	@org.kie.api.definition.type.Label(value = "adminstration")
+	@org.kie.api.definition.type.Label("adminstration")
 	private java.lang.String adminstration;
-	@org.kie.api.definition.type.Label(value = "department")
+	@org.kie.api.definition.type.Label("department")
 	private java.lang.String department;
-	@org.kie.api.definition.type.Label(value = "educationpoints")
+	@org.kie.api.definition.type.Label("educationpoints")
 	private java.lang.Integer educationpoints;
-	@org.kie.api.definition.type.Label(value = "experiencepoints")
+	@org.kie.api.definition.type.Label("experiencepoints")
 	private java.lang.Integer experiencepoints;
-	@org.kie.api.definition.type.Label(value = "scopeofwork")
-	private java.lang.Integer scopeofwork;
-	@org.kie.api.definition.type.Label(value = "complexityofwork")
-	private java.lang.Integer complexityofwork;
-	@org.kie.api.definition.type.Label(value = "supervisoryandmanagerialpoints")
+	@org.kie.api.definition.type.Label("supervisoryandmanagerialpoints")
 	private java.lang.Integer supervisoryandmanagerialpoints;
-	@org.kie.api.definition.type.Label(value = "authoritypoints")
+	@org.kie.api.definition.type.Label("authoritypoints")
 	private java.lang.Integer authoritypoints;
-	@org.kie.api.definition.type.Label(value = "decisionpoints")
+	@org.kie.api.definition.type.Label("decisionpoints")
 	private java.lang.Integer decisionpoints;
-	@org.kie.api.definition.type.Label(value = "totalpoints")
+	@org.kie.api.definition.type.Label("totalpoints")
 	private java.lang.Integer totalpoints;
-	@org.kie.api.definition.type.Label(value = "createby")
+	@org.kie.api.definition.type.Label("createby")
 	private java.lang.String createby;
+
+	@org.kie.api.definition.type.Label(value = "scopeofworkpoints")
+	private java.lang.Integer scopeofworkpoints;
+
+	@org.kie.api.definition.type.Label(value = "complexityofworkpoints")
+	private java.lang.Integer complexityofworkpoints;
 
 	public individualAssessment() {
 	}
@@ -76,22 +78,6 @@ public class individualAssessment implements java.io.Serializable {
 		this.experiencepoints = experiencepoints;
 	}
 
-	public java.lang.Integer getScopeofwork() {
-		return this.scopeofwork;
-	}
-
-	public void setScopeofwork(java.lang.Integer scopeofwork) {
-		this.scopeofwork = scopeofwork;
-	}
-
-	public java.lang.Integer getComplexityofwork() {
-		return this.complexityofwork;
-	}
-
-	public void setComplexityofwork(java.lang.Integer complexityofwork) {
-		this.complexityofwork = complexityofwork;
-	}
-
 	public java.lang.Integer getSupervisoryandmanagerialpoints() {
 		return this.supervisoryandmanagerialpoints;
 	}
@@ -133,27 +119,44 @@ public class individualAssessment implements java.io.Serializable {
 		this.createby = createby;
 	}
 
+	public java.lang.Integer getScopeofworkpoints() {
+		return this.scopeofworkpoints;
+	}
+
+	public void setScopeofworkpoints(java.lang.Integer scopeofworkpoints) {
+		this.scopeofworkpoints = scopeofworkpoints;
+	}
+
+	public java.lang.Integer getComplexityofworkpoints() {
+		return this.complexityofworkpoints;
+	}
+
+	public void setComplexityofworkpoints(
+			java.lang.Integer complexityofworkpoints) {
+		this.complexityofworkpoints = complexityofworkpoints;
+	}
+
 	public individualAssessment(java.lang.String jobname,
 			java.lang.String adminstration, java.lang.String department,
 			java.lang.Integer educationpoints,
-			java.lang.Integer experiencepoints, java.lang.Integer scopeofwork,
-			java.lang.Integer complexityofwork,
+			java.lang.Integer experiencepoints,
 			java.lang.Integer supervisoryandmanagerialpoints,
 			java.lang.Integer authoritypoints,
 			java.lang.Integer decisionpoints, java.lang.Integer totalpoints,
-			java.lang.String createby) {
+			java.lang.String createby, java.lang.Integer scopeofworkpoints,
+			java.lang.Integer complexityofworkpoints) {
 		this.jobname = jobname;
 		this.adminstration = adminstration;
 		this.department = department;
 		this.educationpoints = educationpoints;
 		this.experiencepoints = experiencepoints;
-		this.scopeofwork = scopeofwork;
-		this.complexityofwork = complexityofwork;
 		this.supervisoryandmanagerialpoints = supervisoryandmanagerialpoints;
 		this.authoritypoints = authoritypoints;
 		this.decisionpoints = decisionpoints;
 		this.totalpoints = totalpoints;
 		this.createby = createby;
+		this.scopeofworkpoints = scopeofworkpoints;
+		this.complexityofworkpoints = complexityofworkpoints;
 	}
 
 }
