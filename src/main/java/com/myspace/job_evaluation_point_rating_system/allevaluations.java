@@ -6,12 +6,26 @@ package com.myspace.job_evaluation_point_rating_system;
 
 public class allevaluations implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public allevaluations() {
-    }
+	@org.kie.api.definition.type.Label(value = "evals")
+	private java.util.List<com.myspace.job_evaluation_point_rating_system.individualAssessment> evals;
 
+	public allevaluations() {
+	}
 
+	public java.util.List<com.myspace.job_evaluation_point_rating_system.individualAssessment> getEvals() {
+		return this.evals;
+	}
 
+	public void setEvals(
+			java.util.List<com.myspace.job_evaluation_point_rating_system.individualAssessment> evals) {
+		this.evals = evals;
+	}
+
+	public allevaluations(
+			java.util.List<com.myspace.job_evaluation_point_rating_system.individualAssessment> evals) {
+		this.evals = evals;
+	}
 
 }
